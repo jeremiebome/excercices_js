@@ -119,37 +119,52 @@ sinon affichez "C'est une petite phrase".
 // };
 
 //----------------------------------------------------------------
-function findDaysInMonth(month, year) {
-  switch (month) {
-    case 1:
-    case 3:
-    case 5:
-    case 7:
-    case 8:
-    case 10:
-    case 12:
-      console.log("31 days");
-      break;
-    case 4:
-    case 6:
-    case 9:
-    case 11:
-      console.log("30 days");
-      break;
-    case 2:
-      if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
-        console.log("29 days");
-      } else {
-        console.log("28 days");
-      }
-      break;
-    default:
-      console.log("Invalid month");
-      break;
-  }
+    // function findDaysInMonth(month, year) {
+    //   switch (month) {
+    //     case 1:
+    //     case 3:
+    //     case 5:
+    //     case 7:
+    //     case 8:
+    //     case 10:
+    //     case 12:
+    //       console.log("31 days");
+    //       break;
+    //     case 4:
+    //     case 6:
+    //     case 9:
+    //     case 11:
+    //       console.log("30 days");
+    //       break;
+    //     case 2:
+    //       if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    //         console.log("29 days");
+    //       } else {
+    //         console.log("28 days");
+    //       }
+    //       break;
+    //     default:
+    //       console.log("Invalid month");
+    //       break;
+    //   }
+    // }
+
+
+//----------------------------------------------------------------
+
+function checkLeapYear(year) {
+    switch (true) {
+        case (year % 4 === 0 && year % 100 !== 0):
+            case(year % 400 === 0):
+            console.log("Leap Year");
+            break;
+    
+        default:
+            console.log("not a leap year");
+            break;
+    }
 }
-
-
+    
 //----------------------------------------------------------------
 
 
