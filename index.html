@@ -249,11 +249,27 @@ sinon affichez "C'est une petite phrase".
 // }
 // }
 //--: Write a JavaScript function to check whether an `input` is an array or not.
-function CheckArray() {
-    const arra = [1,2,3,4,5];
+// function CheckArray() {
+//     const arra = [1,2,3,4,5];
 
-    console.log(Array.isArray(arra));
+//     console.log(Array.isArray(arra));
+// }
+// function isArray(checkArray) {
+//     return Array.isArray(checkArray);
+// }
+
+//----------------------------------------------------------------
+//Write a JavaScript function to get the first element of an array. Passing the parameter 'n' will return the first 'n' elements of the array.
+function GetFirstElement(array, n) {
+    if (n === undefined) { 
+        return array[0];
+    }else{
+        return array.slice(0, n);
+    }
 }
+
+    
+
 
 //----------------------------------------------------------------
 
