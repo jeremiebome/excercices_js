@@ -152,21 +152,110 @@ sinon affichez "C'est une petite phrase".
 
 //----------------------------------------------------------------
 
-function checkLeapYear(year) {
-    switch (true) {
-        case (year % 4 === 0 && year % 100 !== 0):
-            case(year % 400 === 0):
-            console.log("Leap Year");
-            break;
+// function checkLeapYear(year) {
+//     switch (true) {
+//         case (year % 4 === 0 && year % 100 !== 0):
+//             case(year % 400 === 0):
+//             console.log("Leap Year");
+//             break;
     
-        default:
-            console.log("not a leap year");
-            break;
-    }
-}
+//         default:
+//             console.log("not a leap year");
+//             break;
+//     }
+// }
     
 //----------------------------------------------------------------
+// function evalNumbers(num1, num2, operation) {
+//   switch (operation) {
+//     case "add":
+//       console.log(num1 + num2);
+//       break;
+//     case "subtract":
+//       console.log(num1 - num2);
+//       break;
+//     case "multiply":
+//       console.log(num1 * num2);
+//       break;
+//     case "divide":
+//       console.log(num1 / num2);
+//       break;
+//     case "modulus":
+//       console.log(num1 % num2);
+//       break;
+//     default:
+//       console.log("Invalid operation");
+//       break;
+//   }
+// }
 
+
+// function findTriangleType(side1, side2, side3) {
+//   if (side1 === side2 && side2 === side3) {
+//     console.log("Equilateral triangle");
+//   } else if (side1 !== side2 && side2 !== side3 && side1 !== side3) {
+//     console.log("Scalene triangle");
+//   } else {
+//     console.log("Isosceles triangle");
+//   }
+// }
+
+
+// function checkLeapYear(year){
+//     if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) 
+//     {
+//         console.log("Leap year")
+//     }
+//     else{
+// console.log("not a leap year")
+//     }
+// }
+// function FindDaysInMonth(month,year) {
+//     const nbrMois = month > 0 || month <= 12;
+//     if(!nbrMois){
+//         console.log("Invalid month");
+//         return 
+//     }
+    
+//     else if ( month == 2  && checkLeapYear(year)){
+
+//         console.log("29  jours");
+//     }
+//     else if( month == 2  && checkLeapYear(year)){
+//         console.log("28  jours")
+//     }
+//     else if ( month== 4 || month== 6 || month==9 || month== 11){
+
+//         console.log("30 jours")
+//     }
+//     else{
+//         console.log("31 jours")
+//     }
+
+    
+// }
+
+//----------------------------------------------------------------
+//part Three (Array)
+
+// function CheckArray() {
+    
+
+// let myFilms = ["Titanic", "24Chrono", "blackPathers"];
+// if (myFilms.indexOf(satisfiesArray) === -1) {
+//     console.log("element doesn't exist");
+// }else{
+//     console.log("element found");
+// }
+// }
+//--: Write a JavaScript function to check whether an `input` is an array or not.
+function CheckArray() {
+    const arra = [1,2,3,4,5];
+
+    console.log(Array.isArray(arra));
+}
+
+//----------------------------------------------------------------
 
     </script>
 </body>
